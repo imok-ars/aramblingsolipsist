@@ -2,7 +2,7 @@
             font-size: 18px;
             font-family:Courier, 'Courier New', monospace;
             color: red;
-            max-width: 1000px;
+            width: 60%;
             margin: auto;
             margin-right: auto;
         }
@@ -18,7 +18,7 @@
             padding: 0;
         }
         header{
-            width: 1000px;
+            width: 100%;
             height:250px;
             padding-top:20px;
             background-color: black;
@@ -30,18 +30,18 @@
             margin-right: 20px;
         }
         ul.horizontal-list li a {
-            display: inline-block; /* Change to inline-block for better alignment */
+            display: inline-block; 
             color: red;
             text-align: center;
-            padding: 4px 4px; /* Adjust padding for a tighter fit */
+            padding: 4px 4px; 
             text-decoration: none;
-            position: relative; /* For positioning the pseudo-element */
+            position: relative; 
         }
         ul.horizontal-list li a::after {
             content: '';
             position: absolute;
             left: 0;
-            bottom: 2px; /* Adjust to position closer to the text */
+            bottom: 2px; 
             width: 0;
             height: 2px;
             background-color: red;
