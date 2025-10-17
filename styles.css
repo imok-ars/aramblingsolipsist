@@ -1,105 +1,152 @@
-        html{
-            font-size: 18px;
-            font-family:Courier, 'Courier New', monospace;
-            color: red;
-            width: 60%;
-            margin: auto;
-            margin-right: auto;
-        }
-        body{
-            background-position:center;
-            /*background-color:black;
-            background-image: url('background.png');*/
-            background-image:linear-gradient(to top, rgb(75, 2, 2), black);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            width: 100%;
-            height:250px;
-            padding-top:20px;
-            background-color: black;
-            text-align: center;
-        }
-        ul.horizontal-list li {
-            font-size: 22px;
-            display: inline-block;
-            margin-right: 20px;
-        }
-        ul.horizontal-list li a {
-            display: inline-block; 
-            color: red;
-            text-align: center;
-            padding: 4px 4px; 
-            text-decoration: none;
-            position: relative; 
-        }
-        ul.horizontal-list li a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 2px; 
-            width: 0;
-            height: 2px;
-            background-color: red;
-            transition: width 0.3s ease-in-out;
-        }
-        ul.horizontal-list li a:hover::after {
-            width: 100%;
-        }
-        a{
-            color:red;
-            text-decoration: underline;
-        }
-        h1{
-            font-size: 50px;
-            font-weight: normal;
-            color: red;
-        }
-        h1 a{
-            color:red;
-            text-decoration: none;
-        }
-        h2{
-            font-weight: normal;
-        }
-        h3{
-            font-weight: bold;
-            text-decoration-line: underline;
-        }
-        h3 a{
-            color: red;
-        }
-        h3 a:hover{
-            color: gray;
-        }
-        h4{
-            color: red;
-            text-align: center;
-        }
-        p.rt{
-            font-size:12px;
-            font-weight: bold;
-        }
-        div{
-            background-color: black;
-            padding: 10px 40px 10px 40px;
-        }
-        
-        section{
-            background-color: black;
-            padding: 40px;
+html {
+    font-size: 18px;
+    font-family: Courier, 'Courier New', monospace;
+    color: red;
+    width: 60%;
+    margin: auto;
+    margin-right: auto;
+}
 
-        }
-        hr{
-            height:2px;
-            background-color:red;
-            border:none;
-        }
-        footer{
-            background-color: black;
-            padding: 20px;
-        }
+body {
+    background-position: center;
+    background-image: linear-gradient(to top, rgb(75, 2, 2), black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    padding-top: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+ul.horizontal-list li {
+    font-size: 22px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul.horizontal-list li a {
+    display: inline-block; 
+    color: red;
+    text-align: center;
+    padding: 4px 4px; 
+    text-decoration: none;
+    position: relative; 
+}
+
+ul.horizontal-list li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px; 
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+
+ul.horizontal-list li a:hover::after {
+    width: 100%;
+}
+
+a {
+    color: red;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    color: red;
+}
+
+h1 a {
+    color: red;
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+h3 a {
+    color: red;
+}
+
+h3 a:hover {
+    color: gray;
+}
+
+h4 {
+    color: red;
+    text-align: center;
+}
+
+p.rt {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div {
+    background-color: black;
+    padding: 10px 40px;
+}
+
+section {
+    background-color: black;
+    padding: 40px;
+}
+
+hr {
+    height: 2px;
+    background-color: red;
+    border: none;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    html {
+        width: 100%;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    ul.horizontal-list li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    div {
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    header {
+        height: auto;
+        padding-top: 20px;
+    }
+}
