@@ -80,7 +80,7 @@ h1 a {
 }
 
 h2 {
-    font-weight: normal;
+    color:white;
 }
 
 h3 {
@@ -99,15 +99,18 @@ h3 a:hover {
 
 h4 {
     /*color: red;*/
-    color:#FADA5E;
+    color:white;
     text-align: center;
+    font-size: 22px;
 }
 
 p.rt {
     font-size: 12px;
     font-weight: bold;
 }
-
+p.quote{
+    padding: 50px;
+}
 div {
     /*background-color: black;*/
     background-color:#003d29;
